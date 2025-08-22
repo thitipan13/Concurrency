@@ -5,7 +5,7 @@ public class BankTest {
         BankAccount a = new BankAccount();
         ArrayList<Thread> t = new ArrayList<>();
         int NUM_DEPOSITOR = 3;
-        int NUM_WITHDEAWER = 0;
+        int NUM_WITHDEAWER = 3;
         int VALUE = 100;
         int ROUND = 10000;
         //สร้างคนฝาก
