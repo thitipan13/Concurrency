@@ -13,7 +13,11 @@ public class BankTest {
             Thread x = new Thread(new Depositor(a, VALUE, ROUND));
             t.add(x);
         }
-
+        //สร้างคนถอน
+        for (int i = 0; i < NUM_WITHDEAWER; i++) {
+            Thread y = new Thread(new Withdrawer(a, VALUE, ROUND));
+            t.add(y);
+        }
         //สั่งทำงาน
         for(Thread thread : t){
             thread.start();
